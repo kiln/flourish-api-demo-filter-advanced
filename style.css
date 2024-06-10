@@ -1,0 +1,82 @@
+body {
+  box-sizing: border-box;
+  margin: 2rem 4rem;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#header {
+  font-weight: 300;
+  margin: 1rem 2rem;
+}
+
+/* Controls */
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 2rem;
+}
+
+.control {
+  margin-right: 2.5rem;
+}
+
+.control-header {
+  margin: 0.5rem 0 0.75rem;
+  padding: 0.5rem 0;
+  padding-right: 1rem;
+  border-bottom: 1px solid rgb(0 0 0 / 15%);
+}
+
+.slider-wrap {
+  display: flex;
+}
+
+.slider-wrap input {
+  margin: 0 0.5rem;
+}
+
+/* Chart */
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.chart {
+  flex: 0 1 auto;
+  width: 100%;
+  margin: 2rem;
+  border: 1px solid rgb(0 0 0 / 7%);
+  box-shadow: 2px 2px 35px rgb(0 0 0 / 4%);
+}
+
+/* Responsive charts */
+@media (min-width: 900px) {
+  #container {
+    flex-wrap: nowrap;
+  }
+
+  .chart {
+    flex: 1 1 50%;
+  }
+}
+
+/* Other */
+#data-note {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 1rem 2rem;
+  pointer-events: none;
+  color: #666;
+  border: 1px solid rgb(0 0 0 / 7%);
+  box-shadow: 2px 2px 35px rgb(0 0 0 / 10%);
+  background: rgb(255 99 71 / 7%);
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+#data-note.hide {
+  opacity: 0;
+}

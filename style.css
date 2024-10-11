@@ -2,11 +2,16 @@ body {
   box-sizing: border-box;
   margin: 2rem 4rem;
   padding: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: Inter, sans-serif;
+}
+
+input,
+option {
+  font-family: Inter, sans-serif;
 }
 
 #header {
-  font-weight: 300;
+  font-weight: 200;
   margin: 1rem 2rem;
 }
 
@@ -25,11 +30,13 @@ body {
   margin: 0.5rem 0 0.75rem;
   padding: 0.5rem 0;
   padding-right: 1rem;
+  color: #666;
   border-bottom: 1px solid rgb(0 0 0 / 15%);
 }
 
 .slider-wrap {
   display: flex;
+  font-size: 0.9rem;
 }
 
 .slider-wrap input {
